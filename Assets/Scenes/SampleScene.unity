@@ -358,10 +358,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7967257132395192466, guid: 7ffc8419fc9fd1743a1deaf10349259e, type: 3}
-      propertyPath: m_Name
-      value: L. Laser
-      objectReference: {fileID: 0}
     - target: {fileID: 8596939081738879752, guid: 7ffc8419fc9fd1743a1deaf10349259e, type: 3}
       propertyPath: m_Name
       value: Player Rig
