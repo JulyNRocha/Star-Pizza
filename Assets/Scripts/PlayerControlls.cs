@@ -6,14 +6,23 @@ using UnityEngine;
 
 public class PlayerControlls : MonoBehaviour
 {
+    [Header("General Setup Settings")]
+    [Tooltip("How fast shi´moves up and down based upon player input")]
     [SerializeField] float controllSpeed = 17f;
     [SerializeField] float xRange = 10f;
     [SerializeField] float yRange = 7f;
+
+    [Header("Laser gun array")]
+    [Tooltip("Add all player lasers here")]
     [SerializeField] GameObject[] lasers;
 
+    [Header("Screen posiiton based tuning")]
     [SerializeField] float positionPitchFactor = -3f;
-    [SerializeField] float controlPitchFactor = -15f;
     [SerializeField] float positionYawFactor = 3f;
+
+
+    [Header("Player input based tuning")]
+    [SerializeField] float controlPitchFactor = -15f;
     [SerializeField] float controlRollFactor = -20f;
 
     float xThrow, yThrow;
