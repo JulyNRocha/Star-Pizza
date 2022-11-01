@@ -3,11 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class PlayerControlls : MonoBehaviour
 {
     [SerializeField] float controllSpeed = 17f;
     [SerializeField] float xRange = 10f;
     [SerializeField] float yRange = 7f;
+    [SerializeField] GameObject[] lasers;
 
     [SerializeField] float positionPitchFactor = -3f;
     [SerializeField] float controlPitchFactor = -15f;
@@ -16,10 +18,16 @@ public class PlayerControlls : MonoBehaviour
 
     float xThrow, yThrow;
 
+    void Start()
+    {
+        
+    }
+
     void Update()
     {
         ProcessTranslation();
         ProcessRotation();
+        ProcessFiring();
 
     }
 
@@ -54,4 +62,28 @@ public class PlayerControlls : MonoBehaviour
         transform.localPosition = new Vector3(clampedXPos, clampedYPos, transform.localPosition.z);
     }
 
+    void ProcessFiring()
+    {
+        if (Input.GetButton("Fire1"))
+        {
+            SetLasersActive(true);
+        }
+        else
+        {
+            SetLasersActive(false);
+        }
+    }
+
+    void SetLasersActive(bool boolean)
+    {
+        foreach (GameObject laser in lasers)
+        {
+            
+            var emissionModule = laser.GetComponent<ParticleSystem>().emission;
+            emissionModule.enabled = boolean;
+
+        }
+    }
+
+    
 }
