@@ -27,10 +27,6 @@ public class PlayerControlls : MonoBehaviour
 
     float xThrow, yThrow;
 
-    void Start()
-    {
-        
-    }
 
     void Update()
     {
