@@ -293,7 +293,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 467420789}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 296.62, y: 67.5, z: 270.9}
+  m_LocalPosition: {x: 296.62, y: 85.6, z: 374.9}
   m_LocalScale: {x: 18.561068, y: 18.561068, z: 18.561068}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -699,6 +699,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8125848286762980957, guid: 7ffc8419fc9fd1743a1deaf10349259e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.05
+      objectReference: {fileID: 0}
     - target: {fileID: 8596939081738879752, guid: 7ffc8419fc9fd1743a1deaf10349259e, type: 3}
       propertyPath: m_Name
       value: Player Rig
