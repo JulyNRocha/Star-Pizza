@@ -10,8 +10,8 @@ public class Enemy : MonoBehaviour
 
     void OnParticleCollision(GameObject other)
     {
-        Instantiate(deathVFX,transform.position, Quaternion.identity);
-       
+        GameObject vfx = Instantiate(deathVFX,transform.position, Quaternion.identity);
+        vfx.transform.parent = parent;
         Destroy(gameObject);
     }
 }
