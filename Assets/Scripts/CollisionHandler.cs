@@ -19,7 +19,6 @@ public class CollisionHandler : MonoBehaviour
      {
           explosionVFX.Play();
           GetComponent<MeshRenderer>().enabled = false;
-          GetComponent<BoxCollider>().enabled = false;
           GetComponent<PlayerControlls>().enabled = false;
           Invoke("ReloadLevel", loadDelay);
      }
