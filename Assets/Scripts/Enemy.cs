@@ -25,6 +25,7 @@ public class Enemy : MonoBehaviour
     {
         Rigidbody rb = gameObject.AddComponent<Rigidbody>();
         rb.useGravity = false;
+        rb.isKinematic = true;
     }
 
     void OnParticleCollision(GameObject other)
