@@ -13,6 +13,7 @@ This was a project that a did in Unity using basic knowledge, studying some aspe
 - Play for the fist Time with **Asset Store**
 - Used Canvas and TextMeshPro and Images
 - Add Music to the game with *Singleton Pattern* 
+- Add Post Proscessing
 
 ## The Course 
 
